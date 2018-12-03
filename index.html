@@ -1,0 +1,583 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		<!---- start-smoth-scrolling---->
+		 <!-- Custom Theme files -->
+		<link href="css/theme-style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!----webfonts---->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<!----//webfonts---->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+</head>
+	<body>
+		<!-----start-container----->
+			<!----- start-header---->
+			<div id="home" class="header">
+				<div class="container">
+					<div class="logo">
+						<a href="#"><img src="images/logo.png" title="logo" /></a>
+					</div>
+					<!----start-top-nav---->
+					 <nav class="top-nav">
+						<ul class="top-nav">
+							<li class="active"><a href="#home" class="scroll">主页 <span> </span></a></li>
+							<li class="page-scroll"><a href="#ser" class="scroll">服务范围 <span> </span></a></li>
+							<li class="page-scroll"><a href="#about" class="scroll">关于我们 <span> </span></a></li>
+							<li class="page-scroll"><a href="#port" class="scroll">代表作品 <span> </span></a></li>
+							<li class="page-scroll"><a href="#team" class="scroll">服务团队<span> </span></a></li>
+							<li class="contatct-active" class="page-scroll"><a href="#contact" class="scroll">联系我们 </a></li>
+						</ul>
+						<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+					</nav>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!----- //End-header---->
+			<!----- start-slider---->
+			<!----start-slider-script---->
+			<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: true,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!----//End-slider-script---->
+			<!-- Slideshow 4 -->
+			    <div  id="top" class="callbacks_container">
+			      <ul class="rslides" id="slider4">
+			        <li>
+			          <img src="images/slide.jpg" alt="">
+			          <div class="caption text-center">
+			          	<div class="slide-text-info">
+			          		<!----<a class="btn1" href="#"><h1>岚山组</h1></a>---->
+			          		<h1><span>最诚信</span> 的日语代写合作伙伴</h1>
+			          		<div class="slide-text">
+			          			<p>专注于日本留学生的志望理由书，期末小论文，毕业论文，研究计划书。专业的团队，诚心的口碑。为您节省不必要的时间，专心备考。岚山组起源于九州，前身为九州大学翻译同好会。是由西日本各大高等学府发起的翻译爱好者组织。全国有十多所国公立院校响应。后转变为岚山学术交流小组。我们以诚信和口碑赢得了大多数九州地区学弟学妹的信赖。我们旨在为了学弟，学妹提供专业的升学指导。答疑解惑留学的种种不安。同时也为升学的同学节省更多的时间。
+</p>
+			          		</div>
+			          		<!--<a class="btn2" href="#"><span>view now</span></a>*/-->
+			          	</div>
+			          </div>
+			        </li>
+			        <li>
+			          <img src="images/slide.jpg" alt="">
+			          <div class="caption text-center">
+			          	<div class="slide-text-info">
+			          		<!----<a class="btn1" href="#"><h1>岚山组</h1></a>-->
+			          		<h1>选择 <span> 岚山组 </span> 的理由</h1>
+			          		<div class="slide-text">
+			          			<p>更专业的团队。岚山组现在职写手多数为国公立的在读学生。近十年的历史赋予了我们有着大量的升学资料和写作经验。加上写手都是长期生活在日本更加的了解日本的风土人情，行文更加流畅更贴近日本生活。绝非国内同专业写手可以比拟。</p>
+			          		</div>
+			          		<!--<a class="btn2" href="#"><span>view now</span></a>*/-->
+			          	</div>
+			          </div>
+			        </li>
+			       <!-- <li>
+			          <img src="images/slide.jpg" alt="">
+			           <div class="caption text-center">
+			           	<div class="slide-text-info">
+			          		<a class="btn1" href="#"><span>岚山组</span></a>
+			          		<h1>hendre <span>vulputa</span> velit</h1>
+			          		<div class="slide-text">
+			          			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+			          		</div>
+			          		<a class="btn2" href="#"><span>view now</span></a>*/
+			          	</div>
+			          </div>
+			        </li>-->
+			      </ul>
+			    </div>
+			    <div class="clearfix"> </div>
+			<!----- //End-slider---->
+			<!----start-services---->
+			<div id="ser" class="services">
+				<div class="container">
+					<div class="services-head text-center">
+						<h3>我们的特色服务</h3>
+						<p>
+							<!-- TODO -->
+						</p>
+					</div>
+					<!-----start-services-grids---->
+					<div class="services-grids">
+						<div class="col-md-4 services-grid">
+							<div class="col-md-3 services-grid-left">
+								<a class="top-icon1" href="#"><span> </span></a>
+							</div>
+							<div class="col-md-9 services-grid-right">
+								<h4><a href="#">志望理由书（论文）（研究计划书）代写交流</a></h4>
+								<p>本专业（同系专业）岚山写手亲手为您量身定制文章。您的所有具体细节要求在线客服随时转达给写手一对一指导服务。提供各专业的全方位指导，岚山客服会第一时间为您答疑解惑，讲解思路。</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="col-md-4 services-grid">
+							<div class="col-md-3 services-grid-left">
+								<a class="top-icon2" href="#"><span> </span></a>
+							</div>
+							<div class="col-md-9 services-grid-right">
+								<h4><a href="#">论文代写润色</a></h4>
+								<p>我们不仅提供代写的量身定制服务，同时也帮助同学们修改自己的论文（或者是被中介坑了的愿书申请书）由同专业的写手亲手为您修改专业词汇，修改语法。最后还有日本写手为您校对。</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="col-md-4 services-grid">
+							<div class="col-md-3 services-grid-left">
+								<a class="top-icon3" href="#"><span> </span></a>
+							</div>
+							<div class="col-md-9 services-grid-right">
+								<h4><a href="#">日中（英）等多国语种的翻译</a></h4>
+								<p>日本国公立的学生多数都要求英语的成绩，我们的英语实力同样不容小觑。并且多数写手都兼修第二外语其中不乏佼佼者。我们的业务已然不局限在单单的日语范围，各专业都能实现日语无缝链接。专业翻译商业合同，商业计划书，外文宣传语。专业的素养您值得信赖。</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="col-md-4 services-grid">
+							<div class="col-md-3 services-grid-left">
+								<a class="top-icon4" href="#"><span> </span></a>
+							</div>
+							<div class="col-md-9 services-grid-right">
+								<h4><a href="#">远程辅导</a></h4>
+								<p>面对一些课程的思路有的时候不仅仅是论文。ゼミ的发表，小型的演戏，有时候就是缺少了一点点的灵感或者是在关键步骤上面没有思路。不用担心。岚山远程辅导为您护航。我们提供远程的辅导，您同专业的学长会第一时间通过ＱＱ　微信联系您。实现一对一交流包您顿开茅塞。</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="col-md-4 services-grid">
+							<div class="col-md-3 services-grid-left">
+								<a class="top-icon5" href="#"><span> </span></a>
+							</div>
+							<div class="col-md-9 services-grid-right">
+								<h4><a href="#">论文抄袭检测</a></h4>
+								<p>专业代写留学生论文作业的同时我们保证所有的文章均为１００％的原创。在您写毕业论文跟修士论文的时候一定会有所担心。岚山组为您核对日语的论文库并且会第一时间给您反馈信息。同时如果您对自己写的论文不放心，也可以交给我们，我们来帮您检测是否重题。</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="col-md-4 services-grid">
+							<div class="col-md-3 services-grid-left">
+								<a class="top-icon6" href="#"><span> </span></a>
+							</div>
+							<div class="col-md-9 services-grid-right">
+								<h4><a href="#">代写紧急救援</a></h4>
+								<p>专业的论文团队有能力解决您的突发情况，例如被私人写手放了鸽子导致论文期限在即无法处理。如果您遇到特别紧急的情况，一个人无法解决。岚山组您值得信赖的伙伴。我们会解决您面临的难题，我们团队合作曾经在五天的时间就赶出了一万字的论文。几个小时帮同学赶出志望理由书更加是家常便饭。</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<!----//End-services---->
+					<!-----//End-services-grids---->
+					<!---- start-about----->
+					<div id="about" class="about">
+						<div class="container">
+							<div class="about-head">
+								<h4>关于我们</h4>
+								<h5>专业的团队！我们并非中介但是更加专业！</h5>
+								<p>"岚山组成立三年历经风雨。有着丰富的写作经验。这一次岚山组重新起航。各部学长整装待发。您是否为了报考头疼不已。您是否为了同时出愿多所学校而手忙脚乱。交给岚山组我们用最低的价格给您最好的服务。"</p>
+							</div>
+								<!----- start-about-grids----->
+								<div class="about-grids">
+									<div class="col-md-7 about-grid-left">
+										<span> </span>
+									</div>
+									<div class="col-md-5 about-grid-right">
+										<h5>团队写手水平</h5>
+										<p>写手最低门槛设置为。n1成绩150的水平。多数写手都有二（三）级翻译证书。医疗翻译证书等。国公立写手都有托福成绩（多少分）英语日语均可接单。长期在国外生活。凝练词汇更加的精准并非国内n1同分数的同学可以比拟。</p>
+										<h6>我们的优势</h6>
+										<p>选择岚山组。组内有在读研究生，在读博士。精通文科 教育系。充分 分析日本各大院校招生重点，针对个人情况，各学校情况量身定制愿书。日语系在读硕士负责校对。保证语法正确，行文流畅通顺。修士组专业知识丰富。多年写作经验，强势指导研究计划书，文风朴实大方，定位清晰准确。</p>
+										<!-----<a class="about-btn" href="#">view now</a>----->
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+								<!----- //End-about-grids----->
+							</div>
+						</div>
+		<!---- //End-about----->
+		<!---- <div class="tlinks">Collect from <a href="http://www.cssmoban.com/" >企业网站模板</a></div>----->
+		<!-----start-portfolio---->
+		<div id="port" class="portfolio-box-main">
+			<div class="container">
+				<div class="portfolio-head text-center">
+					<h3>成果展示</h3>
+					<span>The work we have done so far for our awesome clients</span>
+					<p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...""There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
+				</div>
+			</div>
+			<!----start-portfolio----->
+		<div class="portfolio portfolio-box">
+			<!----start-portfolio---->
+         <div  class="portfolio-main">
+	        	<!---- start-portfolio-script----->
+					<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+					<script type="text/javascript">
+						$(function () {
+							var filterList = {
+								init: function () {
+								
+									// MixItUp plugin
+									// http://mixitup.io
+									$('#portfoliolist').mixitup({
+										targetSelector: '.portfolio',
+										filterSelector: '.filter',
+										effects: ['fade'],
+										easing: 'snap',
+										// call the hover effect
+										onMixEnd: filterList.hoverEffect()
+									});				
+								
+								},
+								hoverEffect: function () {
+									// Simple parallax effect
+									$('#portfoliolist .portfolio').hover(
+										function () {
+											$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+											$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+										},
+										function () {
+											$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+											$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+										}		
+									);				
+								
+								}
+					
+							};
+							// Run the show!
+							filterList.init();
+						});	
+					</script>
+					<!----//End-portfolio-script----->
+					<ul id="filters" class="clearfix">
+						<!----<li><span class="filter" data-filter="app card icon logo web">All</span> |</li>
+						<li><span class="filter  active" data-filter="app">Photography</span> |</li>
+						<li><span class="filter" data-filter="card">video</span> |</li>
+						<li><span class="filter" data-filter="icon">graphics</span> |</li>
+						<li><span class="filter" data-filter="app">branding</span> |</li>
+						<li><span class="filter" data-filter="app">web sites</span></li>----->
+					</ul>
+					<div id="portfoliolist">
+					<div class="portfolio logo1 mix_all" data-cat="logo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p1.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Duis nec congue</h3>
+						     				<span>Neque porro quisquam est qui dolorem </span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>				
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p2.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Duis nec congue</h3>
+						     				<span>Neque porro quisquam est qui dolorem </span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>		
+					<div class="portfolio web mix_all" data-cat="web" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p3.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Duis nec congue</h3>
+						     				<span>Neque porro quisquam est qui dolorem </span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>				
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p4.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Duis nec congue</h3>
+						     				<span>Neque porro quisquam est qui dolorem </span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>	
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p5.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Duis nec congue</h3>
+						     				<span>Neque porro quisquam est qui dolorem </span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>			
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p6.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Duis nec congue</h3>
+						     				<span>Neque porro quisquam est qui dolorem </span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>	
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p7.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Duis nec congue</h3>
+						     				<span>Neque porro quisquam est qui dolorem </span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>	
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p8.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Duis nec congue</h3>
+						     				<span>Neque porro quisquam est qui dolorem </span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>			
+					<div class="clearfix"> </div>	
+					<a class="more-ports text-center" href="#"><span> </span></a>																																				
+				</div>
+		</div>
+		</div>
+		<div class="clearfix"> </div>
+		</div>
+         <!----//End-portfolio---->
+         <!----start-team----->
+         <div id="team" class="team">
+         	<div class="container">
+         		<div class="team-head text-center">
+         			<h3>服务团队</h3>
+         			<p>"现在代写组有长期在职写手17人。多数为国公立在读学生。少部分毕业生。拥有极为丰富的写作经验且非常了解日本的风土文化。毕业生有大学院及博士毕业的兼职写手。坚持原创，保证品质一直是我们良好的传统。"</p>
+         		</div>
+         		<div class="team-members-grids text-center">
+         			<div class="col-md-4 team-member-grid">
+         				<img src="images/team-member-pic.jpg" title="name" />
+         				<h5><a href="#">Dr. Brown</a></h5>
+         				<span>CEO</span>
+         				<p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+         				<ul class="list-unstyled list-inline">
+         					<li><a href="#"><i class="fa fa-facebook"> </i></a></li>
+         					<li><a href="#"><i class="fa fa-twitter"> </i></a></li>
+         					<li><a href="#"><i class="fa fa-skype"> </i></a></li>
+         				</ul>
+         			</div>
+         			<div class="col-md-4 team-member-grid">
+         				<img src="images/team-member-pic.jpg" title="name" />
+         				<h5><a href="#">Dr. Brown</a></h5>
+         				<span>The Boss</span>
+         				<p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+         				<ul class="list-unstyled list-inline">
+         					<li><a href="#"><i class="fa fa-facebook"> </i></a></li>
+         					<li><a href="#"><i class="fa fa-twitter"> </i></a></li>
+         					<li><a href="#"><i class="fa fa-skype"> </i></a></li>
+         				</ul>
+         			</div>
+         			<div class="col-md-4 team-member-grid">
+         				<img src="images/team-member-pic.jpg" title="name" />
+         				<h5><a href="#">Dr. Brown</a></h5>
+         				<span>Account Director</span>
+         				<p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+         				<ul class="list-unstyled list-inline">
+         					<li><a href="#"><i class="fa fa-facebook"> </i></a></li>
+         					<li><a href="#"><i class="fa fa-twitter"> </i></a></li>
+         					<li><a href="#"><i class="fa fa-skype"> </i></a></li>
+         				</ul>
+         			</div>
+         			<div class="clearfix"> </div>
+         		</div>
+         	</div>
+         </div>
+         <!----//End-team----->
+         <!----start-contact---->
+         <div id="contact" class="contact">
+         	<div class="container">
+         		<div class="contact-head text-center">
+         			<h3>联系我们</h3>
+         			<span>The work we have done so far for our awesome clients</span>
+         			<p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...""There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
+         		</div>
+         		<div class="contact-grids">
+         			<div class="col-md-7 contact-left">
+         				<h4>Sent mail</h4>
+         						<form>
+									<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+									<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+									<input type="text" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}">
+									<textarea onfocus="if(this.value == 'Message ') this.value='';" onblur="if(this.value == '') this.value='Message *;">Message </textarea>
+									<input type="submit" value="Send Message" />
+								</form>	
+         			</div>
+         			<div class="col-md-5 contact-right">
+         				<h4>Contact info</h4><br />
+         				<p><span class="icon1"> </span><a href="#">info@website.com</a></p><br />
+         				<p><span class="icon2"> </span>123456789</p><br />
+         				<p><span class="icon3"> </span><label>Office no 1, main road city name- 78</label></p><br />
+         				 <!-----<h4>Follow us on</h4><br />
+         				<ul class="list-unstyled list-inline">
+         					<li><a class="face" href="#"><span> </span></a></li>
+         					<li><a class="drib" href="#"><span> </span></a></li>
+         					<li><a class="twitt" href="#"><span> </span></a></li>
+         					<li><a class="sanp" href="#"><span> </span></a></li>
+         					<li><a class="gpluse" href="#"><span> </span></a></li>---->
+         				</ul>
+         			</div>
+         			<div class="clearfix"> </div>
+         		</div>
+         	</div>
+         </div>
+         <!----//End-contact---->
+         <!-----start-footer---->
+         <div class="footer">
+         	<div class="container">
+         		<div class="footer-right">
+         			<!-----<p>Copyright &copy; 2014.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>---->
+         			<script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+         		</div>
+         		<div class="clearfix"> </div>
+         	</div>
+         </div>
+         <!-----//End-footer---->
+		<!-----//End-container----->
+
+</body>
+</html>
