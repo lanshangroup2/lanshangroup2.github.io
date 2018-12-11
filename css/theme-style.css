@@ -982,6 +982,13 @@ span.default_line {
 	font-weight: 600;
 	text-transform: uppercase;
 }
+.contact-left span{
+	width: 607px;
+	height: 444px;
+	background: url(../images/image1.jpg) no-repeat 0px 0px;
+	display: inline-block;
+	background-size: contain;
+}
 .contact-left input[type="text"],.contact-left textarea{
 	color:#FFF;
 	font-size:1em;
@@ -1036,6 +1043,14 @@ span.default_line {
 	font-size: 1.5em;
 	font-weight: 600;
 	text-transform: uppercase;
+}
+.contact-right span{
+	width: 607px;
+	height: 444px;
+	display: inline-block;
+	background: url(../images/image2.jpg) no-repeat 0px 0px;
+	vertical-align: top;
+	background-size: contain;
 }
 .contact-right p a,.contact-right p{
 	color:#FFF;
