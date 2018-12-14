@@ -424,7 +424,7 @@ nav a#pull {
 /*-----start-services----*/
 .services{
 	padding: 3em 0;
-	background: url(../images/services-bg.jpg);
+	background: url(../images/team-bg.jpg);
 }
 .services-grid{
 	margin-top:2em;
@@ -870,6 +870,7 @@ span.default_line {
 }
 /*-----start-team----*/
 .team{
+	background:url(../images/teamhead.jpg);
 	padding: 4em 0 2em;
 }
 .team-members-grids{
@@ -904,7 +905,7 @@ span.default_line {
 	border: 1px solid #CCCCCC;
 	padding: 2em;
 	border-bottom: 10px solid #F4BB36;
-	margin-right: 3em;
+	margin-right: 0em;
 	width: 44%;
 }
 .team-member-grid:nth-child(3){
